@@ -1,0 +1,56 @@
+/* Estiliza el encabezado */
+ion-toolbar {
+    --background: #d219a4; /* Cambia el color de fondo del encabezado */
+    color: #fff; /* Cambia el color del texto del encabezado */
+    font-weight: bold;
+  }
+  
+  /* Estiliza los botones del encabezado */
+  ion-buttons[slot="end"] ion-button {
+    color: #fff; /* Cambia el color del texto de los botones del encabezado */
+    font-weight: bold;
+    margin-left: 10px; /* Agrega un poco de espacio entre los botones */
+  }
+  .custom-background {
+    background-color: #e0e0e0; /* Puedes cambiar este color según tus preferencias */
+  }
+  
+  
+  /* Estiliza el título */
+  ion-title {
+    font-size: 20px; /* Cambia el tamaño del texto del título */
+  }
+  
+  /* Estiliza los elementos de la lista de usuarios */
+  ion-list ion-item {
+    border: 1px solid #ccc; /* Agrega un borde a los elementos de la lista */
+    margin: 10px; /* Agrega espacio entre los elementos de la lista */
+    border-radius: 8px;
+  }
+  
+  ion-thumbnail {
+    width: 100px; /* Define el ancho de la miniatura de la imagen */
+    height: 100px; /* Define la altura de la miniatura de la imagen */
+  }
+  
+  /* Estiliza el contenido de los elementos de la lista */
+  ion-label h2 {
+    font-size: 18px; /* Cambia el tamaño de la fuente del título */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  ion-label p {
+    font-size: 14px; /* Cambia el tamaño de la fuente del texto secundario */
+    margin: 0;
+  }
+  
+  /* Añade espacio entre los elementos de la lista */
+  ion-list ion-item + ion-item {
+    margin-top: 20px;
+  }
+  
+  ion-content, ion-item {
+    --background: #16db65;
+    color: #1a1619;
+  }

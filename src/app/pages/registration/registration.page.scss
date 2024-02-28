@@ -1,0 +1,79 @@
+/* Alinea el botón "Escanear DNI" al centro horizontalmente */
+ion-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 200px;
+    background-color: #1978f0; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+  }
+  
+  /* Estiliza la vista previa de la cámara */
+  ion-card {
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  ion-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  ion-spinner {
+    --padding-top: 0;
+    --padding-bottom: 0;
+    margin-bottom: 16px;
+  }
+  
+  /* Estiliza los botones "Tomar/Seleccionar Foto" */
+  ion-button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #4CAF50; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+  }
+  
+  /* Estiliza los elementos del formulario */
+  ion-item {
+    margin-bottom: 10px;
+  }
+  
+  ion-label {
+    font-weight: bold;
+  }
+  
+  ion-input {
+    border: 0px solid #ccc;
+    border-radius: 2px;
+    padding: 10px;
+  }
+  
+  /* Estiliza el botón "Registrarse" */
+  ion-button[color="primary"] {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #FF5722; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+  }
+  
+  /* Estiliza el encabezado */
+  ion-toolbar {
+    --background: #c229ba; /* Cambia el color de fondo del encabezado */
+  }
+  
+  ion-title {
+    color: #fff; /* Cambia el color del texto del título */
+  }
+  
+  ion-button[slot="end"] {
+    color: #fff; /* Cambia el color del texto de los botones del encabezado */
+  }
+  
+  /* Añade un poco de espaciado en la parte inferior del encabezado */
+  ion-header {
+    margin-bottom: 20px;
+  }

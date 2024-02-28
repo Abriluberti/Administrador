@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToRegistrationPage()">Listado</ion-button>
+      <ion-button color="sucess" (click)="signOut()">Cerrar sesión</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-button (click)="escanearDNI()" color="secondary">Escanear DNI</ion-button>
+
+<!-- ...otros elementos HTML... -->
+
+<!-- Agrega esta sección con *ngIf para mostrar la vista previa de la cámara -->
+<div *ngIf="usandoQR">
+  <!-- Muestra la vista de la cámara mientras se escanea el QR -->
+  <ion-card>
+    <ion-card-content>
+      <!-- Aquí puedes mostrar un mensaje o una vista de carga -->
+      <ion-spinner name="crescent"></ion-spinner>
+      <ion-label>Escaneando DNI...</ion-label>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+<ion-content color="success">
+  <ion-card color="medium">
+    <ion-card-content >
+      <ion-list>
+       
+
+<ion-button expand="full" color="secondary" (click)="tomarFoto()">Tomar Foto</ion-button>
+
+   
+
+<ion-item  color="light" class="apellidos-item">
+  <ion-label position="stacked">Apellidos</ion-label>
+  <ion-input type="text" placeholder="Apellidos" [(ngModel)]="user.apellidos"></ion-input>
+</ion-item>
+        <ion-item color="light">
+          <ion-label position="stacked">Nombres</ion-label>
+          <ion-input type="text" placeholder="Nombres" [(ngModel)]="user.nombres"></ion-input>
+        </ion-item>
+        
+        <ion-item color="light">
+          <ion-label position="stacked">Número de DNI</ion-label>
+          <ion-input type="text" placeholder="Número de DNI" [(ngModel)]="user.dni"></ion-input>
+        </ion-item>
+        
+        <ion-item color="light">
+          <ion-label position="stacked">Correo electrónico</ion-label>
+          <ion-input type="email" placeholder="Correo electrónico" [(ngModel)]="user.correo"></ion-input>
+        </ion-item>
+        
+        <ion-item color="light">
+          <ion-label position="stacked">Contraseña</ion-label>
+          <ion-input type="password" placeholder="Contraseña" [(ngModel)]="user.clave"></ion-input>
+        </ion-item>
+        
+        <ion-item color="light">
+          <ion-label position="stacked">Confirmar contraseña</ion-label>
+          <ion-input type="password" placeholder="Confirmar contraseña" [(ngModel)]="confirmPassword"></ion-input>
+        </ion-item>
+        
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="full" color="secondary" (click)="registerUser()">Registrarse</ion-button>
+</ion-content>

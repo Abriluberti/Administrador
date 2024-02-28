@@ -1,0 +1,80 @@
+.login-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.login-title {
+  font-size: 24px;
+  color: #f8f2f2;
+}
+
+.login-subtitle {
+  font-size: 18px;
+  color: #faf6f6;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  margin: 20px 0;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+ion-item {
+  margin-bottom: 12px;
+  --background: #ad977c;
+}
+
+ion-input {
+  border: 1px solid #662d2d;
+  --background: #fff3e4;
+  border-radius: 5px;
+}
+
+ion-button {
+  background-color: #00ff95;
+  color: #5e0e0e;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.buttons-container ion-button {
+  width: 30%;
+  font-size: 16px;
+  color: rgb(183, 0, 255);
+  border: 2px solid #ff009d;
+  background-color: #FFEBE6; /* Color crema */
+  border-radius: 20px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons-container ion-button:hover {
+  background-color: rgb(255, 0, 212);
+  color: #6b2929;
+}
+
+.buttons-container ion-button ion-icon {
+  font-size: 24px;
+  margin-right: 6px;
+}
+
+/* Agrega un color crema como fondo */
+/* Agrega un color crema como fondo */
+.cream-background {
+  --background: #ad977c; /* Puedes ajustar el color según tus preferencias */
+  color: #e7e4e0;
+}
+
+.login-title{
+  --background: #e7e4e0;
+}

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "administracion-5bbd6"
+  },
+  "targets": {
+    "administracion-5bbd6": {
+      "hosting": {
+        "app": [
+          "administracion-5bbd6"
+        ]
+      }
+    }
+  }
+}
